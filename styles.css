@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.hero h1 span {
+  color: #ff2963;
+  font-weight: 900;
+}
+textarea {
+  width: 600px;
+  height: 200px;
+
+  font-size: 18px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  resize: none;
+  margin-bottom: 30px;
+  color: gray;
+  background: #efeff3;
+}
+textarea::-webkit-input-placeholder {
+  color: grey;
+  font-size: 16px;
+}
+.row {
+  width: 600px;
+  display: flex;
+  align-content: center;
+  gap: 20px;
+}
+button {
+  background: #ff2963;
+  color: #fff;
+  font-style: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+button:hover {
+  background: #f50747;
+}
+button img {
+  width: 16px;
+  margin-right: 10px;
+}
+select {
+    font-size: 10px;
+  flex: 1;
+  color: #fff;
+  background: #ff2963;
+  height: 50px;
+  padding: 0 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 35px;
+  appearance: none;
+  background-image: url("https://img.icons8.com/ios-filled/50/expand-arrow--v1.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 20px;
+  
+}
+@media screen and (max-width: 634px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .row {
+    width: 100%;
+    flex-direction: column;
+  }
+  textarea {
+    width: 300px;
+    height: 120px;
+  }
+  select {
+    font-size: 12px;
+    padding: 16px;
+  }
+}
